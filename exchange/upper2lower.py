@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import wx
 from tkinter import *
 import tkinter.messagebox as messagebox
 
@@ -12,7 +13,7 @@ class ExchangeTools(Frame):
     def creatWidgets(self):
         self.contentInput = Entry(self)
         self.contentInput.pack()
-        self.alertButton = Button(self, text='大写转换', width=50, height=20, command=self.upper2lower)
+        self.alertButton = Button(self, text='大写转换', command=self.upper2lower)
         self.alertButton.pack()
 
     def upper2lower(self):
