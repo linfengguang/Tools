@@ -74,7 +74,7 @@ class WebApp_AutoTest(object):
         '''
         使用第三方库request发送请求,根据response的数据进行判断DUT是否成功阻断请求并返回，有以下几种返回：
         1、deny:被DUT阻断了
-        2、allow:请求成功了，可以认为DUT没有阻断这次请求，有可能
+        2、allow:请求成功了，可以认为DUT没有阻断这次请求，有可能DUT配置错误，也可能referer不对
         3、error:当前只对10060错误码进行了捕获并详细返回，可能原因为referer是错误的
         4、返回抛出的异常信息：其他错误码均把抛出的异常返回
         '''
